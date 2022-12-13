@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+
+  background: var(--body-bg-color);
+
+  color: var(--text-color);
+
+  font-family: Merriweather Sans;
+}
+
+body {
+  margin: 2% 2%;
+}
+
+.main {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 20% 37% 37%;
+  grid-template-rows: 4% 12% 5% 16% 11% 23%;
+  grid-template-areas:
+    "profile myprojects myprojects"
+    "profile project-1 project-2"
+    "contacts recentPost recentPost"
+    "contacts post post"
+    "tec . ."
+    "exp . ."
+    "edu . .";
+
+  column-gap: 3%;
+  row-gap: 3%;
+}
+
+.profile {
+  grid-area: profile;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 35vh;
+  min-width: 195px;
+  min-height: 209px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border: solid 3px green;
+  border-radius: 50%;
+}
+
+.profile p {
+  margin: 0px;
+}
+
+.profile h2 {
+  margin-bottom: 5px;
+}
+
+.myprojects {
+  grid-area: myprojects;
+  border: solid 2px var(--bg-cards);
+  width: 73vw;
+  height: 10vh;
+  border-radius: 10px;
+  }
+  .myprojectsContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  .myprojectsText {
+    padding-left: 2%;
+  }
+  .verTodos {
+    padding-top: 1%;
+    padding-right: 2%;
+  }
+  .myprojects h2, p {
+    display: flex;
+  }
+
+.contacts {
+  grid-area: contacts;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+.contacts p {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  padding: 5%;
+}
+
+.project-1 {
+  grid-area: project-1;
+  background-color: var(--bg-cards);
+  border-radius: 10px;
+  width: 35vw;
+  height: 25vh;
+}
+  .pasta-e-titulo {
+      display: flex;
+      gap: 3%;
+      padding-left: 3.5%;
+  }
+      .informacoes-projeto {
+          padding-left: 4%;
+      }
+          .estrela {
+              display: flex;
+          }
+              .git-branch {
+                  display: flex;
+              }
+                  .projeto1-base {
+                      display: flex;
+                      gap: 3%;
+                      padding-left: 3.5%;
+                  }
+                      .projeto1-padding {
+                          padding:5% 3% 3% 4%;
+                      }
+
+
+.project-2 {
+  grid-area: project-2;
+  border: solid 2px var(--bg-cards);
+  width: 35vw;
+  height: 25vh;
+  border-radius: 10px;
+}
+
+.recentPost {
+  grid-area: recentPost;
+  border: solid 2px var(--bg-cards);
+  width: 73vw;
+  height: 10vh;
+  border-radius: 10px;
+}
+.recentPostContent {
+  padding-left: 3%;
+}
+
+.post {
+  grid-area: post;
+  width: 73vw;
+  height: 29vh;
+  border: solid 2px var(--bg-cards);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction:column;
+}
+
+
+.postContent {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+.textPost {
+  padding-left: 5%;
+}
+
+.tecnologies {
+  grid-area: tec;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 21vh;
+  border-radius: 10px;
+
+  display: flex;
+  box-sizing: border-box;
+}
+
+.experiences {
+  grid-area: exp;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 44vh;
+  border-radius: 10px;
+}
+
+.education {
+  grid-area: edu;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 44vh;
+  border-radius: 10px;
+}
+.eduPadding {
+  padding-left: 5%;
+}
+
+/*cards color*/
+.profile,
+.myprojects,
+.project-1,
+.project-2,
+.contacts,
+.education,
+.experiences,
+.tecnologies,
+.recentPost,
+.post {
+  background: var(--bg-cards);
+  box-shadow: 1px 2px 2px rgb(22, 22, 22);
+}
+
+.js,
+.css,
+.git,
+.reactjs,
+.github,
+.elixir,
+.nodejs,
+.html,
+.reactNative {
+  border: solid 1px var(--bg-techs);
+  width: 90px;
+  height: 30px;
+  border-radius: 30px;
+}
+.tecnologies p {
+  background-color: var(--bg-techs);
+  display:inline;
+  justify-content: center;
+  align-items: center;
+
+}
